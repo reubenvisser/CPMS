@@ -1,4 +1,6 @@
 #include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /*=============================== Nodes ==============================*/
 
@@ -17,6 +19,10 @@ typedef struct node {
 
 /*============================= Functions ============================*/
 
-void queue_append(node_t** queue_head, char* rego) {
-
-}
+/**
+ * @brief Appends new vehicle to end of queue
+ * 
+ * @param queue_head pointer to queue head pointer
+ * @param vehicle pointer to vehicle pointer
+ */
+void queue_append(node_t** queue_head, vehicle_t** vehicle);
