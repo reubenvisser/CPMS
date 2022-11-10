@@ -7,6 +7,7 @@
 #include "config.h"
 
 /* =========================== COMPONENTS ============================*/
+
 /* licence plate reader */
 typedef struct lpr {
     pthread_mutex_t lock;
