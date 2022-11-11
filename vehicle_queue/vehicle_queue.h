@@ -7,7 +7,7 @@
 typedef struct vehicle {
     char rego[6]; // licence plate in form 123APB
 
-    uint8_t parking_level;
+    uint8_t parkingLevel;
     uint8_t entrance;
     uint8_t exit;
 } vehicle_t;
@@ -22,7 +22,15 @@ typedef struct node {
 /**
  * @brief Appends new vehicle to end of queue
  * 
- * @param queue_head pointer to queue head pointer
+ * @param queueHead pointer to queue head pointer
  * @param vehicle pointer to vehicle pointer
  */
-void queue_append(node_t** queue_head, vehicle_t** vehicle);
+void queueAppend(node_t** queueHead, vehicle_t** vehicle);
+
+/**
+ * @brief Remove vehicle from front of queue
+ * 
+ * @param queueHead pointer to queue head pointer
+ * @return node_t* new head pointer
+ */
+node_t* queuePop(node_t** queueHead);

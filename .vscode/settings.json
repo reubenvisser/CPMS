@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "sharedmemory.h": "c"
+        "sharedmemory.h": "c",
+        "stdio.h": "c",
+        "vehicle_queue.h": "c"
     }
 }
